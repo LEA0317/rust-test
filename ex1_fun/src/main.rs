@@ -1,5 +1,5 @@
-const s: &str = include_str!("main.rs");
+const S: &str = include_str!("main.rs");
 
 fn main() {
-    println!("{}", s);
+    println!("{}", S);
 }

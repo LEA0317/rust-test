@@ -1,9 +1,9 @@
 fn main() {
-    const INF: i32 = 1_000;
+    const INF: usize = 1_000;
     let n: i32 = 4;
     let m: i32 = 3;
     let _m: i32 = 10_000;
-    let mut dp = [[0 as i32; INF as usize]; INF as usize];
+    let mut dp = [[0 as i32; INF]; INF];
 
     dp[0][0] = 1;
     for i in 1..m+1 {

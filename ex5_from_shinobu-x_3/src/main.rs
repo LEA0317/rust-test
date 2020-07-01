@@ -3,13 +3,13 @@ fn main() {
     const M: i32 = 10_000;
     let n: i32 = 3;
     let m: i32 = 3;
-    let mut a: [i32; 3*INF] = [0 as i32; 3*INF];
+    let mut a: [i32; INF] = [0 as i32; INF];
     let mut dp = [[0 as i32; INF]; INF];
 
     for i in 0..n+1 {
     	dp[i as usize][0] = 1;
     }
-    for i in 0..3*INF {
+    for i in 0..INF {
     	a[i as usize] = (i % 3) as i32 + 1;
     }
 

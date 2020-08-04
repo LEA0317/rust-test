@@ -26,13 +26,13 @@ fn sqrtd(x: f64) -> f64 {
    unsafe {
      conv.i = 0x5f3759df - (conv.i >> 1);
      rsqrt = conv.f as f64;
-     rsqrt *= half3 - (half_x * rsqrt * rsqrt);
-     rsqrt *= half3 - (half_x * rsqrt * rsqrt);
-     rsqrt *= half3 - (half_x * rsqrt * rsqrt);
-     rsqrt *= half3 - (half_x * rsqrt * rsqrt);
-     rsqrt *= half3 - (half_x * rsqrt * rsqrt);
-     rsqrt * x
    }
+   rsqrt *= half3 - (half_x * rsqrt * rsqrt);
+   rsqrt *= half3 - (half_x * rsqrt * rsqrt);
+   rsqrt *= half3 - (half_x * rsqrt * rsqrt);
+   rsqrt *= half3 - (half_x * rsqrt * rsqrt);
+   rsqrt *= half3 - (half_x * rsqrt * rsqrt);
+   rsqrt * x
 }
 
 fn main() {
